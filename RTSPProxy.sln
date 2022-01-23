@@ -1,0 +1,74 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RTSPH264Client", "RTSPH264Client\RTSPH264Client.csproj", "{12A246E3-4F66-48A4-8896-94EDC6012068}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Proxy", "proxy\Proxy.csproj", "{A72BA05D-0373-4467-BC8A-3C0851B65288}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6D49C4A5-5A20-4444-AC99-54E15233C3CB}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12A246E3-4F66-48A4-8896-94EDC6012068}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12A246E3-4F66-48A4-8896-94EDC6012068}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12A246E3-4F66-48A4-8896-94EDC6012068}.Debug|x64.ActiveCfg = Debug|x64
+		{12A246E3-4F66-48A4-8896-94EDC6012068}.Debug|x64.Build.0 = Debug|x64
+		{12A246E3-4F66-48A4-8896-94EDC6012068}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12A246E3-4F66-48A4-8896-94EDC6012068}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12A246E3-4F66-48A4-8896-94EDC6012068}.Release|x64.ActiveCfg = Release|x64
+		{12A246E3-4F66-48A4-8896-94EDC6012068}.Release|x64.Build.0 = Release|x64
+		{A72BA05D-0373-4467-BC8A-3C0851B65288}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A72BA05D-0373-4467-BC8A-3C0851B65288}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A72BA05D-0373-4467-BC8A-3C0851B65288}.Debug|x64.ActiveCfg = Debug|x64
+		{A72BA05D-0373-4467-BC8A-3C0851B65288}.Debug|x64.Build.0 = Debug|x64
+		{A72BA05D-0373-4467-BC8A-3C0851B65288}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A72BA05D-0373-4467-BC8A-3C0851B65288}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A72BA05D-0373-4467-BC8A-3C0851B65288}.Release|x64.ActiveCfg = Release|x64
+		{A72BA05D-0373-4467-BC8A-3C0851B65288}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F49F8EED-3718-4463-A8F6-05C796799EEC}
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.TextStylePolicy = $1
+		$1.FileWidth = 80
+		$1.TabWidth = 8
+		$1.IndentWidth = 8
+		$1.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $2
+		$2.IndentSwitchSection = False
+		$2.NewLinesForBracesInTypes = False
+		$2.NewLinesForBracesInProperties = False
+		$2.NewLinesForBracesInAccessors = False
+		$2.NewLinesForBracesInAnonymousMethods = False
+		$2.NewLinesForBracesInControlBlocks = False
+		$2.NewLinesForBracesInAnonymousTypes = False
+		$2.NewLinesForBracesInObjectCollectionArrayInitializers = False
+		$2.NewLinesForBracesInLambdaExpressionBody = False
+		$2.NewLineForElse = False
+		$2.NewLineForCatch = False
+		$2.NewLineForFinally = False
+		$2.NewLineForMembersInObjectInit = False
+		$2.NewLineForMembersInAnonymousTypes = False
+		$2.NewLineForClausesInQuery = False
+		$2.SpacingAfterMethodDeclarationName = True
+		$2.SpaceAfterMethodCallName = True
+		$2.SpaceBeforeOpenSquareBracket = True
+		$2.scope = text/x-csharp
+		version = 0.0.1
+	EndGlobalSection
+EndGlobal

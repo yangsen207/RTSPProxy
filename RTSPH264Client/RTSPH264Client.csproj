@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+	<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+	<RootNamespace>Solace.DotNet.Rtsp</RootNamespace>
+	<AssemblyName>Solace.DotNet.RtspH264Client</AssemblyName>
+	<ReleaseVersion>0.0.1</ReleaseVersion>
+	<Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Class1.cs" />
+    <Compile Remove="G711Payload.cs" />
+    <Compile Remove="Sdp\Timing.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NLog" Version="4.5.10" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>RTSPProxy</AssemblyName>
+    <ReleaseVersion>0.0.1</ReleaseVersion>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="rtsp_capture_20180620_144330.264" />
+    <None Remove="frame_20180921_152021.jpg" />
+    <None Remove="Flir_HD-XT.jpg" />
+    <None Remove="Siqura_HSD626.h264" />
+    <None Remove="Siqura_HSD626.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SolaceSystems.Solclient.Messaging" Version="10.15.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RTSPH264Client\RTSPH264Client.csproj" />
+  </ItemGroup>
+</Project>
