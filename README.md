@@ -43,7 +43,7 @@ You need to run the RTSPProxy first then the outputProxy(from Robert's project [
 
     RTSPProxy\proxy\bin\x64\Release\netcoreapp2.0\dotnet RTSPProxy.dll <msg_backbone_ip:port> <message-vpn> <username> <topic> rtsp_video_uri <verbose/none>
 
-    ./build/staged/bin/outputProxy <msg_backbone_ip:port> <message-vpn> <username> <topic> <redirect_host_ip> <redirect_host_port> <verbose/none>
+    \build\staged\bin\outputProxy <msg_backbone_ip:port> <message-vpn> <username> <topic> <redirect_host_ip> <redirect_host_port> <verbose/none>
 
 
 ## License
