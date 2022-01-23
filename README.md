@@ -39,7 +39,7 @@ Just clone and build using Visual Studio or from command line. For example:
 
 ## Running the Project
 
-You need to run the RTSPProxy first then the outputProxy(from Robert's project), like the following:
+You need to run the RTSPProxy first then the outputProxy(from Robert's project [here](https://github.com/roberthatwork/broadcastme)), like the following:
 
     RTSPProxy\proxy\bin\x64\Release\netcoreapp2.0\dotnet RTSPProxy.dll <msg_backbone_ip:port> <message-vpn> <username> <topic> rtsp_video_uri <verbose/none>
 
