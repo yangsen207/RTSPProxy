@@ -30,8 +30,8 @@ Currently the RTSPProxy is able to redirect video content only, the support for 
 
 
 ## Build the Project
-
-Just clone and build using Visual Studio or from command line. For example:
+This project requires .NET Standard 2.0 to build.
+You can clone and build using Visual Studio or from command line. For example:
 
   1. clone this GitHub repository
   1. `MSBuild RTSPProxy.sln /p:Configuration=Release /p:Platform=x64`
