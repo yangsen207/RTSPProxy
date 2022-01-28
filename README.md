@@ -7,7 +7,7 @@ where he demonstrated how live video can be streaed over Solace broker using UDP
 
 The following diagram shows the flow of video stream from the live source to the receiving device:
 
-![](https://github.com/yangsen207/RTSPProxy/master/resources/Diagrams.png)
+![](https://github.com/yangsen207/RTSPProxy/tree/main/resources/Diagrams.png)
 
 Note: SMF stands for Solace Message Format and is the wireline message format used by the Solace Java API.
 
