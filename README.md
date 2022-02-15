@@ -22,7 +22,7 @@ Note: SMF stands for Solace Message Format and is the wireline message format us
 from its temporary queue, re-encapsulates the content into RTP stream packets and redirect to the specified host and port.
 
 - Network stream viewing programes such as VLC can then be used to pick up the redirected live stream based on the
-forwarding host and port specified by the OutputProxy.  To play the RTP stream, the video player will require an SDP file which describe the video stream. Currently there is no convenient way to get the SDP file. A walkaround is to use VLC to play the original RTSP stream and use Wireshark to capture the network traffic. The reply from the RTSP server for the DESCRIBE request contains the SDP information. Copy the content and save it as a .sdp file, update the port number to the one specified in PutputProxy.
+forwarding host and port specified by the OutputProxy.  To play the RTP stream, the video player will require an SDP file which describe the video stream. It can be saved by this RTSPProxy when it receives the server reply for DESCRIBE request. Another walkaround is to use VLC to play the original RTSP stream and use Wireshark to capture the network traffic. The reply from the RTSP server for the DESCRIBE request contains the SDP information. Copy the content and save it as a .sdp file, update the port number to the one specified in PutputProxy.
 - When you use VLC to play the SDP file, VLC will start to listen on the port and be able to decode the RTP packets correctly. Check the sample_video.sdp in the resources directory for a reference.
 
 ## Limitation

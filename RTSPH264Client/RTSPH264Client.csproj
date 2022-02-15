@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
 	<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 	<RootNamespace>Solace.DotNet.Rtsp</RootNamespace>
 	<AssemblyName>Solace.DotNet.RtspH264Client</AssemblyName>
