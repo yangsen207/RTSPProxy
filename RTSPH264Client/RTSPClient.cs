@@ -441,6 +441,7 @@ namespace Solace.DotNet.Rtsp {
 				using (var sdp_stream = new StreamReader (new MemoryStream (message.Data))) {
 					sdp_data = Sdp.SdpFile.Read (sdp_stream);
 				}
+				File.WriteAllText ("video.sdp", System.Text.Encoding.Default.GetString (message.Data));
 
 				// Process each 'Media' Attribute in the SDP (each sub-stream)
 				for (int x = 0; x < sdp_data.Medias.Count; x++) {
