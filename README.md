@@ -18,8 +18,7 @@ Note: SMF stands for Solace Message Format and is the wireline message format us
 
         ffmpeg.exe -re -stream_loop -1 -i my-video-file.mp4 -c copy -f rtsp rtsp://127.0.0.1:8554/mystream
 
-- The same OutputProxy as in Robert's project can be used to get the video packets from Solace broker and output to an UDP port as RTP stream. Basically it creates a temporary queue with a topic (i.e. stream channel) subscription.  It then receives messages 
-from its temporary queue, re-encapsulates the content into RTP stream packets and redirect to the specified host and port.
+- The same OutputProxy as in Robert's project can be used to get the video packets from Solace broker and output to an UDP port as RTP stream. Basically it subscribe to a topic where the video packets are streamed to. After receiving data from the topic, it re-encapsulates the content into RTP stream packets and redirect to the specified host and port.
 
 - Network stream viewing programes such as VLC can then be used to pick up the redirected live stream based on the
 forwarding host and port specified by the OutputProxy.  To play the RTP stream, the video player will require an Session Description Protocol(SDP) file which describe the video stream. This RTSPProxy will save the SDP into a file named video.sdp when it receives the server reply for DESCRIBE request. 
@@ -30,11 +29,11 @@ and update the number 0 to the port number OutputProxy uses.
 - When you use VLC to play the SDP file, VLC will start to listen on the port and be able to decode the RTP packets correctly. Check the sample_video.sdp in the resources directory for a reference.
 
 ## Limitation
-Currently the RTSPProxy is able to redirect video content only, the support for audio can be implemented similarly.
+Currently the RTSPProxy is able to stream video content only, the support for audio can be implemented similarly.
 
 
 ## Build the Project
-This project requires .NET Standard 2.0 to build.
+This project requires .NET Core 3.1 to build.
 You can clone and build using Visual Studio or from command line. For example:
 
   1. clone this GitHub repository
