@@ -22,7 +22,11 @@ Note: SMF stands for Solace Message Format and is the wireline message format us
 from its temporary queue, re-encapsulates the content into RTP stream packets and redirect to the specified host and port.
 
 - Network stream viewing programes such as VLC can then be used to pick up the redirected live stream based on the
-forwarding host and port specified by the OutputProxy.  To play the RTP stream, the video player will require an SDP file which describe the video stream. It can be saved by this RTSPProxy when it receives the server reply for DESCRIBE request. Another walkaround is to use VLC to play the original RTSP stream and use Wireshark to capture the network traffic. The reply from the RTSP server for the DESCRIBE request contains the SDP information. Copy the content and save it as a .sdp file, update the port number to the one specified in PutputProxy.
+forwarding host and port specified by the OutputProxy.  To play the RTP stream, the video player will require an Session Description Protocol(SDP) file which describe the video stream. This RTSPProxy will save the SDP into a file named video.sdp when it receives the server reply for DESCRIBE request. 
+- You will need to update the sdp file to the correct UDP port number before the player can play the RTP stream, search for the line starting with 
+	`m=video 0 RTP/AVP`
+and update the number 0 to the port number OutputProxy uses.
+	
 - When you use VLC to play the SDP file, VLC will start to listen on the port and be able to decode the RTP packets correctly. Check the sample_video.sdp in the resources directory for a reference.
 
 ## Limitation
@@ -34,7 +38,7 @@ This project requires .NET Standard 2.0 to build.
 You can clone and build using Visual Studio or from command line. For example:
 
   1. clone this GitHub repository
-  1. `MSBuild RTSPProxy.sln /p:Configuration=Release /p:Platform=x64`
+  2. `MSBuild RTSPProxy.sln /p:Configuration=Release /p:Platform=x64`
 
 
 ## Running the Project
