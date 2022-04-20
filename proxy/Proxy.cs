@@ -27,6 +27,7 @@ namespace RtspClientExample {
 			sessionProps.Host = args [0];
 			sessionProps.VPNName = args [1];
 			sessionProps.UserName = args [2];
+			sessionProps.Password = args [3];
 
 			IContext context = null;
 			ISession session = null;
@@ -79,7 +80,7 @@ namespace RtspClientExample {
 				}
 				//send to solace
 				IMessage message = ContextFactory.Instance.CreateMessage ();
-				message.Destination = ContextFactory.Instance.CreateTopic (args [3]);
+				message.Destination = ContextFactory.Instance.CreateTopic (args [4]);
 				message.DeliveryMode = MessageDeliveryMode.Direct;
 				message.BinaryAttachment = nal_units;
 
@@ -89,10 +90,10 @@ namespace RtspClientExample {
 
 			try {
 				// Connect to RTSP Server
-				Console.WriteLine ($"Connecting " + args [4]);
+				Console.WriteLine ($"Connecting " + args [5]);
 
 				client.Timeout = 3000;
-				client.Connect (args [4], "admin", "password");
+				client.Connect (args [5], "admin", "password");
 
 				while (!client.IsStreamingFinished ()) {
 					await Task.Delay (100);
