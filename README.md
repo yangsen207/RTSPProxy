@@ -44,9 +44,10 @@ You can clone and build using Visual Studio or from command line. For example:
 
 You need to run the RTSPProxy first then the outputProxy(from Robert's project [here](https://github.com/roberthatwork/broadcastme)), like the following:
 
-    RTSPProxy\proxy\bin\x64\Release\netcoreapp2.0\dotnet RTSPProxy.dll <msg_backbone_ip:port> <message-vpn> <username> <topic> rtsp_video_uri <verbose/none>
+    RTSPProxy\proxy\bin\x64\Release\netcoreapp2.0\dotnet RTSPProxy.dll <msg_backbone_ip:port> <message-vpn> <username> <password> <topic> rtsp_video_uri <verbose/none>
 
     \build\staged\bin\outputProxy <msg_backbone_ip:port> <message-vpn> <username> <topic> <redirect_host_ip> <redirect_host_port> <verbose/none>
+	(you can update the program to accept password for the username)
 
 
 ## License
